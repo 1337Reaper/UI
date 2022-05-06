@@ -53,6 +53,15 @@ This is an alternative room card to the standard one that is more rectangular th
     label: '[[[ return states["sensor.room_temperature"].state + "°C" ]]]'
 ```
 
+## Other Label Examples
+
+To have temperature and humidity shown with seperating icons use the following label while adding your own sensors:
+
+```yaml
+'[[[ return["🌡️"] + states["sensor.temperature"].state +"°C  💧"+states["sensor.humidity"].state + "%"]]]'
+```
+
+
 ## Template code
 
 ```yaml
